@@ -9,7 +9,7 @@ Notlar:
 - Twilio ile SMS gönderimi için; https://www.twilio.com/en-us adresi üstünden Free Account ile hesap oluşturabilirsiniz
 
 
-### Configürasyonlar
+### Konfigürasyonlar
 
 docker-compose.yaml dosyası içinde aşağıdaki ENV bilgilerini düzenlemek gerekmektedir.
 
