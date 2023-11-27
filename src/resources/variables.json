@@ -1,0 +1,32 @@
+{
+  "istanbul_altunizade": {
+    "getvisaofficeid": "8",
+    "getservicetypeid":"1",
+    "getvisacountryid":"1",
+    "consularid": "2",
+    "exitid":"8",
+    "servicetypeid":"1",
+    "calendarType":"2",
+    "totalperson":"1"
+  },
+  "istanbul_gayrettepe": {
+    "getvisaofficeid": "1",
+    "getservicetypeid":"1",
+    "getvisacountryid":"1",
+    "consularid": "2",
+    "exitid":"1",
+    "servicetypeid":"1",
+    "calendarType":"2",
+    "totalperson":"1"
+  },
+  "izmir":{
+    "getvisaofficeid": "3",
+    "getservicetypeid":"1",
+    "getvisacountryid":"1",
+    "consularid": "2",
+    "exitid":"3",
+    "servicetypeid":"1",
+    "calendarType":"2",
+    "totalperson":"1"
+  }
+}
