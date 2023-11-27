@@ -7,6 +7,7 @@ Notlar:
 - İtalya için şuan 3 ofis tanımlanmıştır; İstanbul-Altunizade, İstanbul-Gayrettepe, İzmir
 - SendGrid email gönderim hesabı için; https://sendgrid.com/en-us adresi üstünden Free Account ile hesap oluşturabilirsiniz
 - Twilio ile SMS gönderimi için; https://www.twilio.com/en-us adresi üstünden Free Account ile hesap oluşturabilirsiniz
+- 2 dakikada bir sorgulama yapmaktadır. idata sistemlerini yormamak adına daha sık istek atmamanızı öneririm(Developerlara iş çıkarmayalım) :) 
 
 
 ### Konfigürasyonlar
