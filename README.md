@@ -1,6 +1,6 @@
 ## IDATA Randevu Bulucu
 
-Idata Schengen Vize başvurusu için otomatik olarak açık randevu slotlarını kontrol eder. SendGrid ve Twilio hesaplarına bbağlamanız durumunda, açık bir randevu slotu bulduğunda size Email ve SMS gönderir.
+Idata Schengen Vize başvurusu için otomatik olarak açık randevu slotlarını kontrol eder. SendGrid ve Twilio hesaplarına bağlamanız durumunda, açık bir randevu slotu bulduğunda size Email ve SMS gönderir.
 
 Notlar:
 - Uygulama mevcut hali ile sadece İtalya randevularını takip etmektedir. Dileyen ilave eklentiler ile Almanya'yı da ekleyebilir.
