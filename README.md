@@ -42,3 +42,12 @@ istanbul_altunizade, istanbul_gayrettepe, izmir
 ### Alert Modu: Test, Prod
 
     MODE: 'Test'
+
+### Çalıştırmak için
+
+    docker compose -f docker-compose.yaml build
+    docker compose -f docker-compose.yaml up
+
+### Durdurmak için
+
+    docker compose -f docker-compose.yaml down
