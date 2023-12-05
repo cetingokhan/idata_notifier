@@ -5,7 +5,7 @@ Idata Schengen Vize başvurusu için otomatik olarak açık randevu slotlarını
 Notlar:
 - Uygulama mevcut hali ile sadece İtalya randevularını takip etmektedir. Dileyen ilave eklentiler ile Almanya'yı da ekleyebilir.
 - İtalya için şuan 3 ofis tanımlanmıştır; İstanbul-Altunizade, İstanbul-Gayrettepe, İzmir
-- SendGrid email gönderim hesabı için; https://sendgrid.com/en-us adresi üstünden Free Account ile hesap oluşturabilirsiniz
+- SendGrid email gönderim hesabı için; https://sendgrid.com/en-us adresi üstünden Free Account ile hesap oluşturabilirsiniz, **Email API menüsünden SMTP Relay adımlarını takip ederek entegrasyon bilgilerini edinebilirsiniz. Gönderici adresi Settings menüsü altında Sender Authentication sayfasındaki verify olmuş mail adresi olmalıdır**
 - Twilio ile SMS gönderimi için; https://www.twilio.com/en-us adresi üstünden Free Account ile hesap oluşturabilirsiniz. **Twilio hesabını oluşturduktan sonra Messaging menüsü altındaki Geo permissions sayfasından Türkiye'ye sms gönderimine izin vermek için işaretlemelisiniz.**
 - 2 dakikada bir sorgulama yapmaktadır. idata sistemlerini yormamak adına daha sık istek atmamanızı öneririm(Developerlara iş çıkarmayalım) :) 
 
