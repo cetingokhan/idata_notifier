@@ -33,7 +33,7 @@ def send_available_appointment_alert(available_dates, is_test_mode=False):
 
 class IdataSpider(scrapy.Spider):
     name = 'idataSpider'
-    start_urls = ['https://ita-schengen.idata.com.tr/tr/appointment-form']
+    start_urls = ['https://deu-schengen.idata.com.tr/tr/appointment-form']
     idata_office_variables = models.Variable.get(os.getenv("IDATA_OFFICE_VARIABLE_NAME"), deserialize_json=True)
 
     def parse(self, response):
@@ -41,7 +41,7 @@ class IdataSpider(scrapy.Spider):
         cnt = response.xpath("//meta[@name='csrf-token']/@content")[0].extract()
 
         yield scrapy.FormRequest(
-            url="https://ita-schengen.idata.com.tr/tr/getcalendarstatus",
+            url="https://deu-schengen.idata.com.tr/tr/getcalendarstatus",
             method='POST',
             headers={'Content-Type': 'application/x-www-form-urlencoded', 'X-CSRF-TOKEN':cnt},
             formdata={"getvisaofficeid": f'{self.idata_office_variables["getvisaofficeid"]}',
@@ -60,15 +60,15 @@ class IdataSpider(scrapy.Spider):
                     items.append(i)
 
         yield scrapy.FormRequest(
-            url="https://ita-schengen.idata.com.tr/tr/getdate",
+            url="https://deu-schengen.idata.com.tr/tr/getdate",
             method='POST',
             headers={'Content-Type': 'application/x-www-form-urlencoded',
                      'Accept':'*/*',
                      'Cookie': ';'.join(items),
-                     'Referer':'https://ita-schengen.idata.com.tr/tr/appointment-form',
+                     'Referer':'https://deu-schengen.idata.com.tr/tr/appointment-form',
                      'X-Requested-With':'XMLHttpRequest',
-                     'Host':'ita-schengen.idata.com.tr',
-                     'Origin':'https://ita-schengen.idata.com.tr',
+                     'Host':'deu-schengen.idata.com.tr',
+                     'Origin':'https://deu-schengen.idata.com.tr',
                      'X-CSRF-TOKEN':cnt},
             formdata={"consularid": f'{self.idata_office_variables["consularid"]}',
                       "exitid":f'{self.idata_office_variables["exitid"]}',
