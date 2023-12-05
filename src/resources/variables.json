@@ -1,4 +1,8 @@
 {
+  "ulke":{
+    "italya":"ita",
+    "almanya":"deu"
+  },
   "istanbul_altunizade": {
     "getvisaofficeid": "8",
     "getservicetypeid":"1",

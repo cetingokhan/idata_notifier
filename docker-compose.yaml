@@ -75,6 +75,7 @@ x-airflow-common:
 
     #Randevu alınmak istenen idata ofisi: istanbul_altunizade, istanbul_gayrettepe, izmir
     IDATA_OFFICE_VARIABLE_NAME: 'istanbul_altunizade'
+    IDATA_COUNTRY_VARIABLE_NAME: 'italya'
 
     #Alert Modu: Test, Prod
     MODE: 'Test'
