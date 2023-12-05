@@ -6,7 +6,7 @@ Notlar:
 - Uygulama mevcut hali ile sadece İtalya randevularını takip etmektedir. Dileyen ilave eklentiler ile Almanya'yı da ekleyebilir.
 - İtalya için şuan 3 ofis tanımlanmıştır; İstanbul-Altunizade, İstanbul-Gayrettepe, İzmir
 - SendGrid email gönderim hesabı için; https://sendgrid.com/en-us adresi üstünden Free Account ile hesap oluşturabilirsiniz
-- Twilio ile SMS gönderimi için; https://www.twilio.com/en-us adresi üstünden Free Account ile hesap oluşturabilirsiniz
+- Twilio ile SMS gönderimi için; https://www.twilio.com/en-us adresi üstünden Free Account ile hesap oluşturabilirsiniz. **Twilio hesabını oluşturduktan sonra Messaging menüsü altındaki Geo permissions sayfasından Türkiye'ye sms gönderimine izin vermek için işaretlemelisiniz.**
 - 2 dakikada bir sorgulama yapmaktadır. idata sistemlerini yormamak adına daha sık istek atmamanızı öneririm(Developerlara iş çıkarmayalım) :) 
 
 
@@ -33,6 +33,10 @@ docker-compose.yaml dosyası içinde aşağıdaki ENV bilgilerini düzenlemek ge
     TWILIO_TO_PHONE_NUMBER: ''
 
 
+### Vize istenen ülke: 
+italya, almanya
+
+    IDATA_COUNTRY_VARIABLE_NAME: 'italya'
 
 ### Randevu alınmak istenen idata ofisi: 
 istanbul_altunizade, istanbul_gayrettepe, izmir
